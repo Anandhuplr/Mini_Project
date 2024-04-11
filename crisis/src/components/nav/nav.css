@@ -1,0 +1,86 @@
+/* Base styles */
+nav {
+    width: 100%;
+    color: white;
+    padding: 36px 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    padding-left: 122px;
+    padding-right: 60px;
+  }
+  
+  nav p {
+    font-size: 20px;
+    font-weight: 600; /* SEMIBOLD */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 100px;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 10px;/* Adjust margin */
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .span1 {
+    color: red;
+  }
+  
+  .button a {
+    padding: 8px 16px;
+    color: white; /* Changed text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent; /* Removed background color */
+    text-decoration: none;
+  }
+  
+  .button a:hover {
+    color: red; /* Changed text color on hover */
+  }
+ 
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    nav {
+      padding: 20px 10px; /* Adjust padding */
+    }
+  
+    nav p {
+      font-size: 18px; /* Decrease font size */
+    }
+  
+    nav ul li {
+      margin: 0 8px; /* Adjust margin */
+      font-size: 14px; /* Decrease font size */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    
+    nav {
+      padding-left: 10px;/* Adjust padding */
+    }
+  
+    nav p {
+      font-size: 16px; /* Decrease font size */
+    }
+  
+    nav ul li {
+      margin: 0 6px; /* Adjust margin */
+      font-size: 12px; /* Decrease font size */
+    }
+  }
+  

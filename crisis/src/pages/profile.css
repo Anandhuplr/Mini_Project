@@ -1,0 +1,46 @@
+.maindiv {
+    font-family: "Roboto", sans-serif;
+    color: white;;
+    background-color: #1C1A1A;
+    width: 100%;
+    height: 900px;
+    padding-top: 100px ;
+    padding-left: 120px;
+    padding-right: 60px;
+  }
+  .feedbck{
+    width: 1100px;
+    margin-bottom: 30px;
+  }
+.feed{
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+
+.feed1{
+    display: flex;
+}
+
+.edit-img{
+    width: 20px;
+    height: 20px;
+    display: inline-block; /* Set image to inline-block */
+    margin-top: 5px;
+    margin-left: 10px; /* Adjust margin as needed for spacing */
+}
+.edit-box{
+    margin-left: 500px;
+}
+.edit-box .edit-input{
+    width: 700px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.edit-box .edit-name{
+    font-size: 15px;
+}
+.sub-box{
+    margin-bottom: 25px;
+}

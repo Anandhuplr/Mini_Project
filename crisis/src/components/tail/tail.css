@@ -1,0 +1,69 @@
+.Tail {
+    background-color: #1c1a1a;
+    width: 100%;
+    height: 180px;
+    padding-left: 123px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Tail p {
+    color: white;
+    font-size: 25px;
+  }
+  
+  .inside {
+    background-color: #1c1a1a;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+  }
+  
+  .contact-item {
+    background-color: #1c1a1a;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between contact items */
+  }
+  
+  .contact-item img {
+    width: 33px;
+    height: 33px;
+    border-radius: 100px;
+    margin-right: 5px;
+  }
+  
+  .contact-item p {
+    font-size: 20px;
+  }
+  .line{
+    height: 92px;
+    background-color: #1c1a1a;
+  }
+  .line hr{
+    margin-left: 90px;
+    margin-right: 90px;
+    height: 2px;
+    background-color: #9e9e9f;
+    border-radius: 30px;
+  }
+  .tailend{
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    background-color: #1c1a1a;
+    
+  }
+
+  .tailend p{
+    font-size: 20px;
+    color: white;
+    margin-right: 340px;
+  }
+  .tailend .para{
+    font-size: 14px;
+    font-weight: 200;
+    margin-right: 100px;
+  }

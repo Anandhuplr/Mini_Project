@@ -1,0 +1,74 @@
+.grev{
+    color: white;;
+    background-color: #1C1A1A;
+    width: 100%;
+    height: 1300px;
+    padding-top: 100px ;
+    padding-left: 120px;
+    padding-right: 60px;
+    
+}
+.grev-req .grev-pa{
+    
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.grev-req .grev-pa2{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.grev-box{
+    padding: 10px;
+    width: 930px;
+    height: 350px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+}
+.gbox{
+    margin-top: 20px;
+    width: 500px;
+    position: absolute;
+    display: flex;
+}
+.gbox p{
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.button-grev{
+    
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgba(207, 55, 55, .5); 
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0.5, 0.7);
+}
+.gbox2{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+.gbox2 button{
+    font-size: 18px;
+}
+.gbox2 textarea{
+    width: 930px;
+    height: 350px;
+    margin-bottom: 15px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width and height */
+    resize: none;
+}

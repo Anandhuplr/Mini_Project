@@ -1,0 +1,47 @@
+
+.maindiv {
+    font-family: "Roboto", sans-serif;
+    color: white;;
+    background-color: #1C1A1A;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px ;
+    padding-left: 120px;
+    padding-right: 60px;
+  }
+  .feedbck{
+    width: 1100px;
+    margin-bottom: 30px;
+  }
+.feed{
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+.feed u {
+
+    text-decoration: underline;
+    text-decoration-thickness: 1px; /* Adjust thickness as needed */
+    text-underline-offset: 3px;/* Offset the underline by 2px to create the gap */
+}
+.feedsen{
+    font-size: 18px;
+}
+.feed2{
+    margin-bottom: 10px;
+}
+.feed-msg{
+    margin-bottom: 10px;
+}
+.feed-msg textarea {
+    width: 900px;
+    height: 350px;
+    background-color: #9E9E9F;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width and height */
+    resize: none;
+}
+
