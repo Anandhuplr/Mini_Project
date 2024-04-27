@@ -36,7 +36,7 @@ export default function Home() {
               Take the first step towards accessing Relief Aid by submitting
               your request here.{" "}
             </p>
-            <button className="button-req">Click Here</button>
+            <button className="button-req" onClick={()=>navigate('/req')}>Click Here</button>
           </div>
           <div className="d1">
             <p className="h1">

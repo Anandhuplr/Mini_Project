@@ -11,20 +11,23 @@
     font-family: "Roboto", sans-serif;
     font-size: 45px;
     font-weight: 800;
-    margin-left: 230px;
+    margin-left: 150px;
 }
 .par{
     height: 530px;
-    width: 585px;
+    width: 500px;
     padding-top: 33px;
 }
-.new{
-    height: 530px;
-    width: 365px;
-    background-color: #A5A5FA;
+
+.new {
+    width: 465px;
     border-top-right-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;
-}
+   
+  }
+  
+  
+  
 .p2{
     font-size: 15px;
 }
@@ -68,10 +71,10 @@
     font-weight: 700;
 }
 .input-box{
-    margin-left: 100px;
-    margin-right: 100px;
+   
+   
     padding-top: 40px;
-    border-bottom:2px solid black;
+   
 }
 .input-box p{
     font-family: "Roboto", sans-serif;
@@ -90,19 +93,61 @@
     font-family: "Roboto", sans-serif;
     font-size: 15px;
 }
-.button-Login{
+.input-box .p-input{
+    
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.red{
+    color: red;
+}
+.button-Login {
     width: 380px;
     height: 58px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 100px;
-    background-color: #9E9E9F;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.8);
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
     border: transparent;
     border-radius: 20px;
     font-family: "Roboto", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 400;
     color: white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0.5, 0.7);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s ;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.button-Login:hover,
+.button-Login:focus,
+.button-Login:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0.5, 0.7);
+    -webkit-transform: scale(1);
+    transform: scale(1.05);
+    
+}
+
+.button-Login .google {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    /* Adjusted margin to make room for text */
+}
+
+
+.new img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
 }
 
   

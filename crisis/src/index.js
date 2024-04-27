@@ -11,6 +11,14 @@ import Profile from './pages/profile';
 import Track from './pages/track';
 import Grievance  from './pages/grievance';
 import reportWebVitals from './reportWebVitals';
+import Request from './pages/Request';
+import Userpage from './counsellor/userpage';
+import Laprof from './counsellor/la-profile';
+import Requestlist from './counsellor/requestlist';
+import Approvedlist from './counsellor/approvedreq';
+import Rejected from './counsellor/rejected';
+import Reqpage from './counsellor/reqpage'
+import Contact from './pages/contact';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -21,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+  },
+  {
+    path: "/contact",
+    element: <Contact/>,
   },
   {
     path:"/signup",
@@ -42,10 +54,7 @@ const router = createBrowserRouter([
     path: "/feedback",
     element: <Feedback/>,
   },
-  {
-    path: "/home",
-    element: <Home/>,
-  },
+  
   {
     path: "/profile",
     element: <Profile/>,
@@ -57,6 +66,34 @@ const router = createBrowserRouter([
   {
     path: "/grievance",
     element: <Grievance/>,
+  },
+  {
+    path: "/req",
+    element: <Request/>,
+  },
+  {
+    path: "/user",
+    element: <Userpage/>,
+  },
+  {
+    path: "/laprof",
+    element: <Laprof/>,
+  },
+  {
+    path:"/requestlist",
+    element: <Requestlist/>,
+  },
+  {
+    path:"/approvedlist",
+    element: <Approvedlist/>,
+  },
+  {
+    path:"/rejected",
+    element: <Rejected/>,
+  },
+  {
+    path:"/reqpage",
+    element: <Reqpage/>,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

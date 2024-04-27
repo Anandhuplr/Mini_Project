@@ -7,11 +7,10 @@ export default function Nav() {
     <nav className='container'>
       <p><span className='span1'>CRISIS </span>CONNECT</p>
       <ul>
-        <li className='button'><Link to='/'>HOME</Link></li>
-        <li className='button'><Link to='/contact'>CONTACT</Link></li>
-        <li className='button'><Link to='/signup'>ABOUT</Link></li>
+        <li className='button'><Link to='/user'>HOME</Link></li>
+        <li className='button'><Link to='/laprof'>PROFILE</Link></li>
+        <li className='button' ><Link to='/'>LOGOUT</Link></li>
       </ul>
     </nav>
   );
 }
-

@@ -11,16 +11,36 @@
     padding-left: 123px;
   }
   
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
   .title {
     font-size: 100px;
     color: white;
     padding-top: 178px;
     font-weight: 700;
     font-variation-settings: "wdth" 75;
+    overflow: hidden; /* Ensure text overflow is hidden */
   }
   
-  span {
-    color: red;
+  .title span {
+    display: inline-block;
+    opacity: 0;
+    animation: slideIn 1.5s ease forwards;
+    animation-delay: calc(var(--i) * 0.05s);
+    color: white; /* Set default color to white */
+  }
+  
+  .title span.crisis {
+    color: red; /* Set color for "CRISIS" to red */
   }
   
   .para {
@@ -34,25 +54,26 @@
   /* Responsive styles */
   @media screen and (max-width: 768px) {
     .title {
-      font-size: 60px; /* Decrease font size */
-      padding-top: 100px; /* Adjust padding */
+      font-size: 60px;
+      padding-top: 100px;
     }
   
     .para {
-      margin-right: 20px; /* Adjust margin */
-      font-size: 16px; /* Decrease font size */
+      margin-right: 20px;
+      font-size: 16px;
     }
   }
   
   @media screen and (max-width: 480px) {
     .title {
-      font-size: 40px; /* Decrease font size */
-      padding-top: 50px; /* Adjust padding */
+      font-size: 40px;
+      padding-top: 50px;
     }
   
     .para {
-      margin-right: 10px; /* Adjust margin */
-      font-size: 14px; /* Decrease font size */
+      margin-right: 10px;
+      font-size: 14px;
     }
   }
+  
   

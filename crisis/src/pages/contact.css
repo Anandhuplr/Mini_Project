@@ -1,0 +1,62 @@
+/* contact.css */
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .contact-container {
+    background-color: #1C1A1A;
+    color: white;
+    padding: 100px 120px 0 60px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+  }
+  
+  .contact-content {
+    max-width: 800px;
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #A5A5FA;
+  }
+  
+  .footer-text {
+    margin: 0;
+    font-size: 14px;
+  }
+  

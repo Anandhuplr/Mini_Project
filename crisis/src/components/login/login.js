@@ -7,7 +7,7 @@ export default function Login() {
 
     <div className='log'>
       <button className="login" onClick={()=>navigate("/login")}>LOGIN</button>
-     <button className="signup" onClick={()=>navigate("/signup")}>SIGNUP</button>
+     <button className="signup" onClick={()=>navigate("/login")}>SIGNUP</button>
     </div>
   )
 }
