@@ -72,3 +72,6 @@
     box-sizing: border-box; /* Ensure padding is included in width and height */
     resize: none;
 }
+.grev-box{
+    color: black;
+}

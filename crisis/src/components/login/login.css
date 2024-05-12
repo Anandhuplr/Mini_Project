@@ -6,7 +6,7 @@
   
   .login,
   .signup {
-    width: 174px;
+    width: 274px;
     height: 66px;
     font-size: 30px;
     font-weight: 700;
@@ -31,6 +31,9 @@
   }
   .signup:hover {
     transform: translateY(-8px);
+  }
+  .slash{
+    color: white;
   }
   /* Responsive styles */
   @media screen and (max-width: 768px) {

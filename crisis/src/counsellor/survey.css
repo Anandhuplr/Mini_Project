@@ -29,20 +29,21 @@
     padding: 30px;
     
   }
-  .reqType {
-    margin-top: 0; /* Remove the margin-top */
+  .reqsurv {
+    margin-top: 0; 
+    /* Remove the margin-top */
     display: flex;
-    flex-direction: column;
   }
   
-  .reqType p {
+  .reqsurv p {
     margin: 5px 0; /* Add margin for spacing between details */
     font-family: "Poppins", sans-serif;
   }
-  .reqType .approve{
-    margin-left: 0px;
+  .reqsurv .approve{
+    margin-left: 20px;
+    
   }
-  .reqType .head{
+  .reqsurv .head{
     width: 100%;
     font-size: 23px;
     font-weight: 600;

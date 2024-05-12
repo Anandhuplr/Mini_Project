@@ -8,7 +8,7 @@ export default function Nav() {
       <p><span className='span1'>CRISIS </span>CONNECT</p>
       <ul>
         <li className='button'><Link to='/home'>HOME</Link></li>
-        <li className='button'><Link to='/profile'>PROFILE</Link></li>
+        <li className='button'><Link to='/laprof'>PROFILE</Link></li>
         <li className='button' ><Link to='/'>LOGOUT</Link></li>
       </ul>
     </nav>

@@ -1,33 +1,177 @@
-.track-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .track-box {
-    
-    padding: 10px;
-    animation: fadeIn 1s ease forwards; /* Use ease-out for a smoother finish */
-    animation-delay: calc(var(--i) * 0.1s);
-    transform: translateY(-20px); 
-  }
-  @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-30px); /* Start from above and move down */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); /* Move down to the final position */
-    }
+.maindiv {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #1c1a1a;
+  width: 100%;
+  min-height: 900px;
+  height: auto;
+  padding-top: 100px;
+  padding-left: 120px;
+  padding-right: 60px;
 }
-  
-  .request-box {
-    width: 1200px;
-    height: 230px;
-    background-color: #D9D9D9;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: black;
+.track-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.track-box {
+  padding: 10px;
+  animation: fadeIn 1s ease forwards; /* Use ease-out for a smoother finish */
+  animation-delay: calc(var(--i) * 0.1s);
+  transform: translateY(-20px);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px); /* Start from above and move down */
   }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move down to the final position */
+  }
+}
+
+.request-box {
+  width: 1200px;
+  height: auto;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+.p {
+  margin-bottom: 10px;
+}
+.pd{
+  margin-bottom: 0px;
+}
+.p2 {
+  font-size: 20px;
+  margin-top: 50px;
+  font-weight: 600;
+}
+.pend {
+  color: blueviolet;
+}
+.app {
+  color: green;
+}
+.rej {
+  color: red;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative; /* Added relative positioning for the container */
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Added relative positioning for each list item */
+}
+
+ul li .line {
+  position: absolute;
+  background-color: rgba(68, 68, 68, 0.781);
+  width: 377px; /* Adjust width as needed */
+  height: 8px;
+  top: 47%;
+  transform: translateY(-50%);
+}
+
+ul li .line-one {
+  left: 50%; /* Position the line between steps 1 and 2 */
+}
+
+ul li .line-two {
+  right: 50%; /* Position the line between steps 2 and 3 */
+}
+
+ul li .icon {
+  font-size: 35px;
+  color: blueviolet;
+  margin: 0 60px;
+}
+ul li .iconA {
+  font-size: 35px;
+  color: green;
+  margin: 0 60px;
+}
+ul li .iconR {
+  font-size: 35px;
+  color: #8B0000;
+  margin: 0 60px;
+}
+ul li .text {
+  font-size: 14px;
+  font-weight: 600;
+  color: blueviolet;
+}
+ul li .textA {
+  font-size: 14px;
+  font-weight: 600;
+  color: green;
+}
+ul li .textR {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8B0000;
+}
+.pT{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.pd{
+  font-size: 18px;
+}
+/* Progress Div Css  */
+
+ul li .progress {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(68, 68, 68, 0.781);
+  margin: 20px ;
+  margin-left: 0px;
+  display: grid;
   
+  place-items: center;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+
+
+ul li .progress .uil {
+  display: none;
+}
+ul li .progress p {
+  font-size: 14px;
+}
+
+/* Active Css  */
+
+ul li .active {
+  background-color: #ff4732;
+  display: grid;
+  place-items: center;
+}
+li .active::after {
+  background-color: #ff4732;
+}
+ul li .active p {
+  display: none;
+}
+ul li .active .uil {
+  font-size: 20px;
+  display: flex;
+}

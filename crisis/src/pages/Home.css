@@ -140,6 +140,17 @@ u{
   cursor: pointer;
   white-space: pre-line; /* Preserve line breaks (\n) and wrap long lines */
 }
+.updateD{
+    margin-bottom: 10px;
+}
+.updateU{
+    font-weight: 600;
+    font-size: 17px;
+}
+.updateN{
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
 
-  
   

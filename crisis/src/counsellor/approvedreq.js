@@ -3,19 +3,33 @@ import './requestlist.css';
 import Nav from '../components/nav/nav2'
 import { useNavigate } from "react-router-dom";
 export default function Approvedlist() {
-    const navigate = useNavigate();
-    const [Requestlist,setRequestlist] = useState([]);
-
-    useEffect(()=>{
-      const req=[{
-        id:1,desc:'Request 1',d:'Request Type :'
-      },
-      
-      {id:3,desc:'Request 3'},
-    ];
+  const navigate = useNavigate();
+  const [Requestlist,setRequestlist] = useState([]);
+  console.log(Requestlist)
+  useEffect(() => {
     
-    setRequestlist(req);
-    },[]);
+    async function fetchData() {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/requests/approved");
+        console.log(response)
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+        setRequestlist(data);
+    
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    fetchData(); 
+  }, []);
+
+  // const handleRequestClick = (requestId) => {
+  //   localStorage.setItem("selectedRequestId", requestId); // Set selected request ID in local storage
+  //   navigate(`/reqpage`); 
+  // };
   return (
     
     <div className='rlist'>
@@ -34,7 +48,10 @@ export default function Approvedlist() {
         {Requestlist.map(request => (
           
           <div key={request.id} className='list-box'>
-            <div className='request-desc'  onClick={()=>navigate('/user')}><b>{request.desc}</b><br></br>{request.d}</div>
+            <div className='request-desc'  onClick={()=>navigate('/user')}>
+            <p>Req Id : {request.id}</p>
+              <p>Username : {request.username}</p>
+              <b>{request.request_desc}</b><br></br>{request.d}</div>
           </div>
         ))}
       </div>

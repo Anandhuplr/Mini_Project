@@ -24,12 +24,14 @@
   }
   .dropdown{
     margin-top: 30px;
+    margin-bottom: 25px;
     
   }
   .dropdown select{
-    width: 320px;
-    height: 40px;
-    padding: 10px;
+    width: 700px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 5px;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 400;

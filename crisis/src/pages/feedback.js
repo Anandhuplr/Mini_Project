@@ -1,7 +1,36 @@
-import React from "react";
+import { React, useState } from "react";
 import "./feedback.css";
 import Nav from "../components/nav/nav1";
+import axios from "axios";
 export default function Feedback() {
+  const[feed,setfeed]=useState("");
+  const token=localStorage.getItem("User_token")
+  async function save(event) {
+    event.preventDefault();
+    const requestData = {
+      
+      feedback_desc: feed,
+      
+    };
+    console.log(requestData);
+    try {
+      await axios.post("http://127.0.0.1:8000/feedback/create/",requestData, {
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `token ${token}`
+        }
+      });
+      
+      
+      alert("FeedBack submitted");
+     
+      setfeed("");
+      
+    } catch (error) {
+      console.error("Error submitting form:", error); 
+    }
+  }
+
   return (
     <div className="maindiv">
       <Nav />
@@ -21,11 +50,15 @@ export default function Feedback() {
         <textarea
           rows={8} // Adjust rows as needed
           placeholder="Enter your feedback about the platform."
+          value={feed}
+            onChange={(event) => {
+              setfeed(event.target.value);
+            }}
           required
         />
         
       </div>
-      <button className="button-gre" type="submit">Submit</button>
+      <button className="button-gre" type="submit" onClick={save}>Submit</button>
     </div>
   );
 }
